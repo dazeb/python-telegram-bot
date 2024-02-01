@@ -60,7 +60,7 @@ jobs:
         shell: bash --noprofile --norc {0}
 
       - name: Submit coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           env_vars: OS,PYTHON
           name: ${{ matrix.os }}-${{ matrix.python-version }}
